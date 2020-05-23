@@ -18,6 +18,8 @@
   "homepage": "https://github.com/LQuangTien/jsAdvanced#readme",
   "dependencies": {
     "axios": "^0.19.2",
-    "co": "^4.6.0"
+    "co": "^4.6.0",
+    "moment": "^2.26.0",
+    "readline-sync": "^1.4.10"
   }
 }
