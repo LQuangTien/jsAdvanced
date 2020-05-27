@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script type="text/javascript">
+    axios.get("http://localhost:9081/posts")
+      .then(function(res){
+        console.log(res.data);
+      })
+    let newObj = {
+      title: "new json-server",
+      author: "typicode"
+    }
+    axios.post("http://localhost:9081/posts", newObj)
+      .then(function(res){
+        console.log("POST======================");
+        console.log(res.data);
+      })
+    let newObjPUT = {
+      title: "newPUT json-server",
+      author: "typicode"
+    }
+    let newObjPUT2 = {
+      title: "newPUT2 json-server",
+      author: "typicode",
+      id: 56
+    }
+    let newObjPUT5 = {
+      title: "newPUT5 json-server",
+      author: "typicode",
+      id: 5
+    }
+    axios.put("http://localhost:9081/posts/2", newObjPUT)
+      .then(function(res){
+        console.log("PUT======================");
+        console.log(res.data);
+      })
+    axios.put("http://localhost:9081/posts/3", newObjPUT2)
+      .then(function(res){
+        console.log("PUT======================");
+        console.log(res.data);
+      })
+    axios.put("http://localhost:9081/posts/5", newObjPUT5)
+      .then(function(res){
+        console.log("PUT======================");
+        console.log(res.data);
+      })
+    let newObjPATCH = {
+      title: "newPATCH json-server",
+      id: 56,
+      school: "CodersX"
+    }
+    axios.patch("http://localhost:9081/posts/4", newObjPATCH)
+      .then(function(res){
+        console.log("PATCH======================");
+        console.log(res.data);
+      })
+    axios.delete('http://localhost:9081/posts/22')
+      .then(function(res){
+        console.log("DELETE======================");
+        console.log(res.data);
+      })
+      .catch(function(error){
+        console.log("ERROR DELETE ============");
+        console.log(error);
+      })
+  </script>
+</body>
+</html>

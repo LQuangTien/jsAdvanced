@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+  <body>
+    <p><input type="checkbox" id="hn" /> Ha Noi</p>
+    <p><input type="checkbox" id="hp" /> Hai Phong</p>
+    <p><input type="checkbox" id="hcm" /> Ho Chi Minh City</p>
+    <p><input type="checkbox" id="dn" /> Da Nang</p>
+    <p><input type="checkbox" id="cm" /> Ca Mau</p>
+    <hr />
+    <p>You selected <span id="count">0</span> city</p>
+    <script type="text/javascript">
+      var checkBox = document.getElementsByTagName("input");
+      var count = 0;
+      var cityCount = document.getElementById("count");
+      var checkedCity = [];
+      checkBox.addEventListener("click", function () {
+        checkedCity = checkBox.filter(function (box) {
+          return box.checked === true;
+        });
+      });
+      cityCount.textContent = checkedCity.length;
+
+    </script>
+  </body>
+</html>

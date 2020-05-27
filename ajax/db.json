@@ -1,0 +1,80 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "newPUT json-server",
+      "author": "typicode",
+      "id": 2
+    },
+    {
+      "title": "newPUT2 json-server",
+      "author": "typicode",
+      "id": 3
+    },
+    {
+      "title": "newPATCH json-server",
+      "author": "typicode",
+      "id": 4,
+      "school": "CodersX"
+    },
+    {
+      "title": "new json-server",
+      "author": "typicode",
+      "id": 20
+    },
+    {
+      "title": "new json-server",
+      "author": "typicode",
+      "id": 21
+    },
+    {
+      "title": "new json-server",
+      "author": "typicode",
+      "id": 23
+    },
+    {
+      "title": "new json-server",
+      "author": "typicode",
+      "id": 24
+    },
+    {
+      "title": "new json-server",
+      "author": "typicode",
+      "id": 25
+    },
+    {
+      "title": "new json-server",
+      "author": "typicode",
+      "id": 26
+    },
+    {
+      "title": "new json-server",
+      "author": "typicode",
+      "id": 27
+    },
+    {
+      "title": "new json-server",
+      "author": "typicode",
+      "id": 28
+    },
+    {
+      "title": "new json-server",
+      "author": "typicode",
+      "id": 29
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
